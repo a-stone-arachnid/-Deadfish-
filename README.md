@@ -3,7 +3,7 @@ Pronounced "not Deadfish Tilde".
 
 Commands:
 ---
-The usual Deadfish~:
+!Deadfish~ includes the standard Deadfish~ commands:
 
 |Command|Function|
 |:---:|:---|
@@ -17,7 +17,7 @@ The usual Deadfish~:
 |`w`|print "Hello, World!"|
 |`h`|halt|
 
-Plus some new stuff:
+!Deadfish~ also has some stuff of its own:
 
 |Command|Function|
 |:---:|:---|
@@ -32,3 +32,16 @@ Plus some new stuff:
 The characters `` `1234567890@#$%^&*-_=+ `` are valid for variable names. All variables start as 0 by default.
 
 Like Deadfish and Deadfish~, the accumulator can never be equal to -1 or 256!
+
+Examples
+---
+
+Hello World:
+```notdft
+w
+```
+
+Alphabet:
+```notdft
+ac{icic}cicicicicic
+```
