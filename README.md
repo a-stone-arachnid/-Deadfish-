@@ -3,7 +3,7 @@ Pronounced "not Deadfish Tilde".
 
 Commands:
 ---
-!Deadfish~ includes the standard Deadfish~ commands:
+!Deadfish~ includes some of the standard Deadfish~ commands:
 
 |Command|Function|
 |:---:|:---|
@@ -12,26 +12,30 @@ Commands:
 |`s`|square accumulator|
 |`o`|output accumulator|
 |`c`|print accumulator as character|
-|`(`|if accumulator is 0, skip to the next `)`|
 |`{`...`}`|do the *...* part 10 times|
-|`w`|print "Hello, World!"|
-|`h`|halt|
+|`w`|say "Hello, World!"|
 
 !Deadfish~ also has some stuff of its own:
 
 |Command|Function|
 |:---:|:---|
-|`n`|set the accumulator to a number from input|
+|`0`|halt|
 |`a`|set the accumulator to 65|
 |`b`|set the accumulator to 97|
 |`v` *x*|set the variable *x* to the accumulator|
 |`g` *x*|set the accumulator to the variable *x*|
-|`~`|throw an error - this is NOT Deadfish~|
+|`~`|throw an error saying `This is NOT Deadfish~`|
 |`!`|make the accumulator negative|
+|`z`|print 256 digits of π if the accumulator is 256|
+|`x`|input a number, and set the accumulator to 34 if it's prime|
 
-The characters `` `1234567890@#$%^&*-_=+ `` are valid for variable names. All variables start as 0 by default.
+The characters `` `125789@$-_=+ `` are valid for variable names. All variables start as 0 by default.
 
-Like Deadfish and Deadfish~, the accumulator can never be equal to -1 or 256!
+All unknown characters are ignored. Case-sensitive, so `iDoO` results in `1`
+
+Like in predecessors, the accumulator can never be equal to -1 or 256!
+
+If the accumulator is -1 or 256, it resets to 0 before the next command.
 
 Examples
 ---
@@ -44,4 +48,9 @@ w
 Alphabet:
 ```notdft
 ac{icic}cicicicicic
+```
+
+Print 256:
+```
+iisiv1sog1io
 ```
