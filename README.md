@@ -1,5 +1,5 @@
 # !Deadfish~
-Pronounced "not Deadfish Tilde".
+Pronounced "not Deadfish Tilde". Code is in the file [`notdft.c`](https://github.com/a-stone-arachnid/Not-Deadfish-Tilde/blob/master/notdft.c)
 
 Commands:
 ---
